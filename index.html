@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>WEBSITE BUDDY</title>
 
@@ -31,14 +32,16 @@ height:100vh;
 background:
 linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
 url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop');
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
 padding:20px;
+color:white;
 }
 
 .hero-content h1{
@@ -102,13 +105,13 @@ transform:translateY(-10px);
 }
 
 .card h3{
-margin-bottom:15px;
 font-size:28px;
+margin-bottom:15px;
 }
 
 .card p{
-color:#555;
 line-height:1.7;
+color:#555;
 }
 
 /* PRICING */
@@ -146,13 +149,12 @@ font-weight:bold;
 
 .price-card p{
 margin:12px 0;
-color:#444;
 }
 
 /* TESTIMONIALS */
 
 .testimonials{
-background:#fff;
+background:white;
 }
 
 .testimonial-container{
@@ -256,11 +258,6 @@ text-decoration:none;
 font-size:20px;
 font-weight:bold;
 margin-top:20px;
-transition:0.3s;
-}
-
-.pay-btn:hover{
-background:#008ecc;
 }
 
 /* FOOTER */
@@ -293,6 +290,99 @@ box-shadow:0 4px 12px rgba(0,0,0,0.3);
 z-index:999;
 }
 
+/* CHATBOT */
+
+.chatbot-button{
+position:fixed;
+bottom:100px;
+right:20px;
+width:65px;
+height:65px;
+background:#ff4d00;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+cursor:pointer;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.chat-container{
+position:fixed;
+bottom:180px;
+right:20px;
+width:340px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+display:none;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+z-index:1000;
+}
+
+.chat-header{
+background:#ff4d00;
+color:white;
+padding:18px;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+}
+
+.chat-box{
+height:300px;
+padding:15px;
+overflow-y:auto;
+background:#f5f5f5;
+}
+
+.bot-message,
+.user-message{
+padding:12px 15px;
+border-radius:15px;
+margin-bottom:12px;
+max-width:80%;
+line-height:1.5;
+font-size:15px;
+}
+
+.bot-message{
+background:#e4e4e4;
+}
+
+.user-message{
+background:#ff4d00;
+color:white;
+margin-left:auto;
+}
+
+.chat-input-area{
+padding:15px;
+background:white;
+}
+
+.chat-input-area input{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+.chat-input-area button{
+width:100%;
+padding:14px;
+background:#ff4d00;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
 /* MOBILE */
 
 @media(max-width:768px){
@@ -309,6 +399,11 @@ font-size:18px;
 .join-form h2,
 .contact h2{
 font-size:38px;
+}
+
+.chat-container{
+width:90%;
+right:5%;
 }
 
 }
@@ -349,74 +444,17 @@ Get Your Website
 
 <div class="card">
 <h3>Business Website</h3>
-<p>
-Modern websites for shops, local businesses and startups.
-</p>
+<p>Modern websites for businesses and startups.</p>
 </div>
 
 <div class="card">
 <h3>Gym Website</h3>
-<p>
-Professional gym and fitness websites with WhatsApp and payment setup.
-</p>
+<p>Professional gym websites with payment and WhatsApp integration.</p>
 </div>
 
 <div class="card">
 <h3>Course Website</h3>
-<p>
-Sell online courses with payment system and mobile-friendly design.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- PRICING -->
-
-<section class="section pricing">
-
-<h2>Website Packages</h2>
-
-<div class="cards">
-
-<div class="price-card">
-
-<h3>Basic</h3>
-
-<div class="price">₹4,999</div>
-
-<p>✔️ 1 Page Website</p>
-<p>✔️ Mobile Friendly</p>
-<p>✔️ WhatsApp Button</p>
-<p>✔️ Fast Delivery</p>
-
-</div>
-
-<div class="price-card">
-
-<h3>Standard</h3>
-
-<div class="price">₹9,999</div>
-
-<p>✔️ Multi Page Website</p>
-<p>✔️ Payment Setup</p>
-<p>✔️ Premium Design</p>
-<p>✔️ SEO Friendly</p>
-
-</div>
-
-<div class="price-card">
-
-<h3>Premium</h3>
-
-<div class="price">₹19,999</div>
-
-<p>✔️ Fully Professional Website</p>
-<p>✔️ Admin Support</p>
-<p>✔️ Custom Design</p>
-<p>✔️ Business Branding</p>
-
+<p>Sell online courses with modern responsive design.</p>
 </div>
 
 </div>
@@ -432,28 +470,23 @@ Sell online courses with payment system and mobile-friendly design.
 <div class="testimonial-container">
 
 <div class="testimonial-box">
-"Website Buddy created an amazing website for my business. Very professional work!"
+"Excellent website work and very fast delivery."
 <h3>- Umesh</h3>
 </div>
 
 <div class="testimonial-box">
-"Fast delivery and modern design. My customers loved the website."
+"Professional design and mobile friendly layout."
 <h3>- Radhe</h3>
 </div>
 
 <div class="testimonial-box">
-"Excellent support and mobile-friendly website. Highly recommended."
+"Highly recommended for business websites."
 <h3>- Rajesh Pandey</h3>
 </div>
 
 <div class="testimonial-box">
-"Payment gateway and WhatsApp integration worked perfectly."
+"Payment setup and chatbot worked perfectly."
 <h3>- Vicky</h3>
-</div>
-
-<div class="testimonial-box">
-"Best website developer for local businesses and startups."
-<h3>- Happy Client</h3>
 </div>
 
 </div>
@@ -474,7 +507,9 @@ Sell online courses with payment system and mobile-friendly design.
 
 <input type="email" id="email" placeholder="Your Email" required>
 
-<button type="submit">GET WEBSITE</button>
+<button type="submit">
+GET WEBSITE
+</button>
 
 </form>
 
@@ -486,13 +521,7 @@ Sell online courses with payment system and mobile-friendly design.
 
 <h2>Start Your Website Today 🌐</h2>
 
-<p>
-Contact us now and get your professional business website.
-</p>
-
-<p style="font-weight:bold; font-size:25px;">
-UPI ID: mathewiob@ybl
-</p>
+<p>UPI ID: mathewiob@ybl</p>
 
 <a href="upi://pay?pa=mathewiob@ybl&pn=WebsiteBuddy&cu=INR"
 class="pay-btn">
@@ -513,57 +542,20 @@ Pay Advance
 
 <!-- WHATSAPP -->
 
-<a href="https://wa.me/918850227735?text=Hi%20I%20need%20a%20website"
+<a href="https://wa.me/918850227735"
 class="whatsapp">
 
 💬
 
 </a>
 
-<!-- GOOGLE FORM -->
-
-<script>
-
-document.getElementById("websiteForm").addEventListener("submit", function(e){
-
-e.preventDefault();
-
-const name = document.getElementById("name").value;
-const phone = document.getElementById("phone").value;
-const email = document.getElementById("email").value;
-
-/*
-IMPORTANT:
-Replace these with your REAL Google Form entry IDs
-*/
-
-const formURL =
-"https://docs.google.com/forms/d/e/1FAIpQLSffEWyyqk2yA29adeePTX4oB_NkrA-mvONq0iTbZXICHc6C-Q/formResponse?"
-+ "entry.1111111111=" + encodeURIComponent(name)
-+ "&entry.2222222222=" + encodeURIComponent(phone)
-+ "&entry.3333333333=" + encodeURIComponent(email);
-
-fetch(formURL,{
-method:"POST",
-mode:"no-cors"
-});
-
-alert("Thank You! We Will Contact You Soon.");
-
-document.getElementById("websiteForm").reset();
-
-});
-
-</script>
-
-</body>
-  <!-- CHATBOT BUTTON -->
+<!-- CHATBOT BUTTON -->
 
 <div class="chatbot-button" onclick="toggleChat()">
-💬
+🤖
 </div>
 
-<!-- CHATBOT BOX -->
+<!-- CHATBOT -->
 
 <div class="chat-container" id="chatContainer">
 
@@ -575,135 +567,46 @@ Website Buddy Assistant
 
 <div class="bot-message">
 Hello 👋<br>
-How can we help you today?
+Please enter your details and message.
 </div>
 
 </div>
 
 <div class="chat-input-area">
 
-<input
-type="text"
-id="userInput"
-placeholder="Type your message..."
->
+<input type="text" id="chatName" placeholder="Your Name">
+
+<input type="tel" id="chatPhone" placeholder="Phone Number">
+
+<input type="email" id="chatEmail" placeholder="Your Email">
+
+<input type="text" id="userInput" placeholder="Your Message">
 
 <button onclick="sendMessage()">
-Send
+Send Message
 </button>
 
 </div>
 
 </div>
 
-<style>
+<!-- MAIN FORM -->
 
-/* CHAT BUTTON */
+<script>
 
-.chatbot-button{
-position:fixed;
-bottom:100px;
-right:20px;
-width:65px;
-height:65px;
-background:#ff4d00;
-color:white;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:32px;
-cursor:pointer;
-z-index:1000;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
+document.getElementById("websiteForm").addEventListener("submit", function(e){
 
-/* CHAT CONTAINER */
+e.preventDefault();
 
-.chat-container{
-position:fixed;
-bottom:180px;
-right:20px;
-width:340px;
-background:white;
-border-radius:20px;
-overflow:hidden;
-display:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
-z-index:1000;
-}
+alert("Thank You! We Will Contact You Soon.");
 
-/* HEADER */
+document.getElementById("websiteForm").reset();
 
-.chat-header{
-background:#ff4d00;
-color:white;
-padding:18px;
-font-size:20px;
-font-weight:bold;
-text-align:center;
-}
+});
 
-/* CHAT BOX */
+</script>
 
-.chat-box{
-height:350px;
-padding:15px;
-overflow-y:auto;
-background:#f5f5f5;
-}
-
-/* MESSAGES */
-
-.bot-message,
-.user-message{
-padding:12px 15px;
-border-radius:15px;
-margin-bottom:12px;
-max-width:80%;
-line-height:1.5;
-font-size:15px;
-}
-
-.bot-message{
-background:#e4e4e4;
-color:black;
-}
-
-.user-message{
-background:#ff4d00;
-color:white;
-margin-left:auto;
-}
-
-/* INPUT AREA */
-
-.chat-input-area{
-display:flex;
-padding:10px;
-background:white;
-border-top:1px solid #ddd;
-}
-
-.chat-input-area input{
-flex:1;
-padding:12px;
-border:1px solid #ccc;
-border-radius:10px;
-outline:none;
-}
-
-.chat-input-area button{
-margin-left:10px;
-padding:12px 18px;
-background:#ff4d00;
-color:white;
-border:none;
-border-radius:10px;
-cursor:pointer;
-}
-
-</style>
+<!-- CHATBOT SCRIPT -->
 
 <script>
 
@@ -721,63 +624,59 @@ chat.style.display = "block";
 
 function sendMessage(){
 
-const input = document.getElementById("userInput");
-const message = input.value.trim();
-
-if(message === "") return;
+const name = document.getElementById("chatName").value;
+const phone = document.getElementById("chatPhone").value;
+const email = document.getElementById("chatEmail").value;
+const message = document.getElementById("userInput").value;
 
 const chatBox = document.getElementById("chatBox");
 
 /* USER MESSAGE */
 
 const userDiv = document.createElement("div");
+
 userDiv.className = "user-message";
+
 userDiv.innerHTML = message;
 
 chatBox.appendChild(userDiv);
 
+/* GOOGLE FORM */
+
+const formURL =
+"https://docs.google.com/forms/d/e/1FAIpQLSffEWyyqk2yA29adeePTX4oB_NkrA-mvONq0iTbZXICHc6C-Q/formResponse?"
++ "entry.85980516=" + encodeURIComponent(name)
++ "&entry.139374701=" + encodeURIComponent(phone)
++ "&entry.446591813=" + encodeURIComponent(email)
++ "&entry.2100843540=" + encodeURIComponent(message);
+
+fetch(formURL,{
+method:"POST",
+mode:"no-cors"
+});
+
 /* BOT REPLY */
 
 const botDiv = document.createElement("div");
+
 botDiv.className = "bot-message";
 
-/* SIMPLE AUTO REPLIES */
-
-if(message.toLowerCase().includes("price")){
-
 botDiv.innerHTML =
-"Our website packages start from ₹4,999.";
-
-}
-else if(message.toLowerCase().includes("contact")){
-
-botDiv.innerHTML =
-"You can contact us on WhatsApp: 8850227735";
-
-}
-else if(message.toLowerCase().includes("website")){
-
-botDiv.innerHTML =
-"We create business, gym, portfolio and course websites.";
-
-}
-else{
-
-botDiv.innerHTML =
-"Thank you for messaging Website Buddy. We will contact you soon.";
-
-}
+"Thank you " + name + "!<br>We received your message.";
 
 chatBox.appendChild(botDiv);
 
-/* AUTO SCROLL */
-
 chatBox.scrollTop = chatBox.scrollHeight;
 
-input.value = "";
+document.getElementById("chatName").value = "";
+document.getElementById("chatPhone").value = "";
+document.getElementById("chatEmail").value = "";
+document.getElementById("userInput").value = "";
 
 }
 
 </script>
+
+</body>
 
 </html>
